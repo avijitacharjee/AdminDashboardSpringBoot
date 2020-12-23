@@ -1,0 +1,5 @@
+<script type="text/javascript" th:inline="javascript">
+var myChart = echarts.init(document.getElementById([[${chartId}]]));
+var myChartOption = [(${chartOptionJson})];
+myChart.setOption(myChartOption);
+</script>
